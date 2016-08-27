@@ -1,19 +1,19 @@
 'use strict';
 
 const Controller = require('./controller');
-const View = require('./view-stdio');
+const ViewSTDIO = require('./view-stdio');
 
-
-
-let v = new View();
+let v = new ViewSTDIO();
 let c = new Controller(1,v);
+c.sayhi = function() {
+	this.v.write('Hi');
+};
+c.ask = function(question) {
+	this.v.write(question);
+	console.log('answer is:',this.v.read());
+}
+
 console.log(c,v);
-c.api.a = 1;
-v.api.b = 2;
-c.c = 3;
-console.log(c,v);
-console.log(c.c);
 c.sayhi();
-console.log(v.read());
-console.log(v.read());
-v.read();
+c.ask('what?');
+c.ask();

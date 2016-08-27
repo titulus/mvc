@@ -8,8 +8,5 @@ class Controller {
 		this.v = View;
 	};
 };
-Controller.prototype.sayhi = function(a) {
-	this.v.write('Hi',this);
-};
 
 module.exports = Controller;

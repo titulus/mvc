@@ -6,7 +6,7 @@ class View {
 		this.api = api;
 	};
 	write() {
-		console.log(Array.prototype.slice.call(arguments));
+		console.log.apply(console,arguments);
 	};
 	read() {
 		return readline.question();
