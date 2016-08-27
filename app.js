@@ -1,7 +1,7 @@
 'use strict';
 
 const Controller = require('./controller');
-const View = require('./view');
+const View = require('./view-stdio');
 
 
 
@@ -14,7 +14,6 @@ c.c = 3;
 console.log(c,v);
 console.log(c.c);
 c.sayhi();
-v.hi();
 console.log(v.read());
 console.log(v.read());
 v.read();
