@@ -5,8 +5,9 @@ const ViewSTDIO = require('./view-stdio');
 const ViewFile = require('./view-file');
 const ModelLS = require('./model-localstorage');
 const ModelRedis = require('./model-redis');
+const ModelMongo = require('./model-mongo');
 
-let m = new ModelRedis();
+let m = new ModelMongo('mongodb://localhost:27017/test','test');
 let v = new ViewSTDIO('f');
 let c = new Controller(m,v);
 c.sayhi = function() {

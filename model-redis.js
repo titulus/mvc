@@ -1,8 +1,11 @@
 'use strict';
 const redis = require('redis');
-const client = redis.createClient();
+let client;
 
 class Model {
+	constructor(){
+		client = redis.createClient();
+	};
 	post(key,value) {
 		client.set(key,value);
 	};

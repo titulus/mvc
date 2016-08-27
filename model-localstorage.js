@@ -1,8 +1,6 @@
 'use strict';
-if (typeof localStorage === "undefined" || localStorage === null) {
-  var LocalStorage = require('node-localstorage').LocalStorage;
-  var localStorage;
-};
+const LocalStorage = require('node-localstorage').LocalStorage;
+let localStorage;
 
 class Model {
 	constructor(path) {
