@@ -11,8 +11,9 @@ class Model {
 	post(key,value) {
 		localStorage.setItem(key,value);
 	};
-	get(key) {
-		return localStorage.getItem(key);
+	get(key,callback) {
+		const val = localStorage.getItem(key);
+		callback(val);
 	};
 };
 
