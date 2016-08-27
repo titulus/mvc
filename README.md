@@ -2,7 +2,7 @@
 tiny mvc example
 ----
 ## usage
-use controller to connect viewers with data models and provide business logic:
+use controller to connect viewers with models and provide business logic:
 ```js
 const Controller = require('../controller');
 
@@ -21,3 +21,6 @@ c.method = ...
 + `./views/view-file.js` - file (specified in construction `new ViewFile('path/to/filename')`) used for input and output.
 
 ### Models
++ `./models/model-localstorage.js` - use pseudo-localstorage (require folder `new ModelLS('path/to/storage')`)
++ `./models/model-mongo.js` - use MongoDB (require server url, dbname and collection `new ModelMongo('mongodb://url/dbname', collection)`)
++ `./models/model-redis.js` - use Redis
