@@ -11,7 +11,5 @@ class Model {
 		client.get(key,(e,val)=>{callbak(val)});
 	};
 };
-// client.set('asd',1);
-// client.del('asd')
-// client.get('asd',(e,val)=>console.log(val));
+
 module.exports = Model;
