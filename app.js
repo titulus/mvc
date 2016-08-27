@@ -3,9 +3,11 @@
 const Controller = require('./controller');
 const ViewSTDIO = require('./view-stdio');
 const ViewFile = require('./view-file');
+const ModelLS = require('./model-localstorage');
 
 let v = new ViewFile('f');
-let c = new Controller(1,v);
+let m = new ModelLS();
+let c = new Controller(m,v);
 c.sayhi = function() {
 	this.v.write('Hi');
 };
