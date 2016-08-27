@@ -1,0 +1,25 @@
+{
+  "name": "mvc",
+  "version": "0.0.1",
+  "description": "tiny mvc",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://titulus:j247Gh29@github.com/titulus/mvc.git"
+  },
+  "keywords": [
+    "mvc"
+  ],
+  "author": "Kuntsevich Andrei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/titulus/mvc/issues"
+  },
+  "homepage": "https://github.com/titulus/mvc#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.4"
+  }
+}
