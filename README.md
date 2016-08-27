@@ -1,2 +1,2 @@
 # mvc
-tiny mvc
+tiny mvc example
